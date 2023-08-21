@@ -13,7 +13,9 @@ Features
 Compose, post and delete notes
 
 How it works
+
 Pre-requisites
+
 Before you begin, you will need to have the following tool installed on your machine: Git. In addition, you might also want an editor to work with the code, like VS Code.
 
 Clone this repository
@@ -30,13 +32,12 @@ $ npm start
 
 # The application will automatically open on the browser at port 3000
 Tech Stack
+
 The following tools were used in the construction of the project:
 
 Front-end (React)
-Material UI
-React DOM
-React Scripts
+Material UI | 
+React DOM | 
+React Scripts | 
 See the file package.json
-
-Utilities
-GH Pages
+ 
