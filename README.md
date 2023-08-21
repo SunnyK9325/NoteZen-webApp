@@ -9,7 +9,9 @@ A replica of Google Keep created mainly using MERN stack. Used React functional 
 
 
 Features
+
 Compose, post and delete notes
+
 How it works
 Pre-requisites
 Before you begin, you will need to have the following tool installed on your machine: Git. In addition, you might also want an editor to work with the code, like VS Code.
@@ -26,7 +28,7 @@ $ npm install
 # Run the application in development mode
 $ npm start
 
-# The application will automatically open on browser at port 3000
+# The application will automatically open on the browser at port 3000
 Tech Stack
 The following tools were used in the construction of the project:
 
