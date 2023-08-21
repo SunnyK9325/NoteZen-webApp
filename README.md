@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Keeper App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## What is the Project
 
-In the project directory, you can run:
+A replica of Google Keep created mainly using MERN stack. Used React functional components for styling the client side, Express and Node for setting up the backend server and MongoDB as a Database for storing title and description of the notes. Here users can add title and description of a particular note and can also delete that note.
 
-### `npm start`
+![]([https://github.com/iArpitVerma/Google-Keeper/blob/main/assets/images/initial-page.jpg](https://github.com/SunnyK9325/NoteZen-webApp/blob/main/assets/images/react_keeper_app.png))
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+* HTML5, CSS3, JavaScript to develop the front-end
+* react.js to create the components and UI
+* .jsx files to write HTML in the body of JavaScript
+* Nodejs and ExpressJs for developing backend server
+* MongoDB database for saving notes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## How to setup the project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Clone the repository.
+* Open it in VSCode or Sublime text editor.
+* This is the frontend part of Google Keeper, to actually run it you need backend server also.
+* Clone this repo 'https://github.com/iArpitVerma/Keeper-api' now.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Keeper-api repo changes
+* Open this in another window of VSCode and run 'npm init'.
+* Setup your mongoDB account and in Cluster section, click on create Collections and you will get unique 'USER' and 'PASS' for that cluster, Put this in index.js on line 10 and 11.
+* Now open terminal again and run 'nodemon index.js', this will start your server at 'http://localhost:5000'.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Google Keeper repo changes
+* Go to App.jsx and on line 9 Delete "https://keeper-api-azna.onrender.com" and replace it with "http://localhost:5000".
+* Open Terminal and run 'npm start', this will open browser window with url "http://localhost:3000" and you will see your web app running successfully.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# How to use
+* Click on "Take a note..." placeholder.
+* The text area gets expanded and a **"+"** button to add the note also appears. The user now have an option to add a title as well
+* When user enters something in the note and click on **"+"**, a new tile of note gets created with a delete button
+* A user can also delete the note when they click on the delete button
