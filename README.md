@@ -8,8 +8,33 @@ A replica of Google Keep created mainly using MERN stack. Used React functional 
 ![](https://github.com/SunnyK9325/NoteZen-webApp/blob/main/assets/images/react_keeper_app.png)
 
 
-## Technologies Used
+Features
+Compose, post and delete notes
+How it works
+Pre-requisites
+Before you begin, you will need to have the following tool installed on your machine: Git. In addition, you might also want an editor to work with the code, like VS Code.
 
-* React.js to develop the front-end
-* Nodejs and ExpressJs for developing Backend server
-* MongoDB database for saving notes
+Clone this repository
+$ git clone https://github.com/SunnyK9325/NoteZen-webApp.git
+Running the Front-end
+# Go to the app folder
+$ cd keeper-app
+
+# Install the dependencies
+$ npm install
+
+# Run the application in development mode
+$ npm start
+
+# The application will automatically open on browser at port 3000
+Tech Stack
+The following tools were used in the construction of the project:
+
+Front-end (React)
+Material UI
+React DOM
+React Scripts
+See the file package.json
+
+Utilities
+GH Pages
