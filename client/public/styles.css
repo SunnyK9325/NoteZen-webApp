@@ -34,33 +34,48 @@ footer {
 
 footer p {
   color: #ccc;
+  font-weight: 800;
 }
+
 .note {
   background: #fff;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
   padding: 10px;
-  width: 240px;
+  max-width: 280px; /* Set a maximum width */
+  width: auto; /* Allow the width to adjust according to content */
+  min-height: 100px; /* Set a minimum height to prevent collapsing when empty */
+  min-width: 200px;
   margin: 16px;
   float: left;
+  position: relative;
 }
+
 .note h1 {
-  font-size: 1.1em;
-  margin-bottom: 6px;
+  font-size: 1.2em;
+  margin: 15px;
 }
+
 .note p {
-  font-size: 1.1em;
-  margin-bottom: 10px;
+  font-size: 1.2em; /* Increased font size for better readability, adjust as desired */
+  line-height: 1.6; /* Increased line height for better spacing */
+  margin-bottom: 15px; /* Increased bottom margin for better separation between notes */
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-family: 'Arial', sans-serif; /* Applied a specific font family, change as per your design */
+  color: #333; /* Adjust text color as needed */
+  margin: 15px;
 }
 
 .note button {
-  position: relative;
-  float: right;
-  margin-right: 10px;
+  position: absolute;
+  bottom: 5px; /* Adjust as needed to fit your design */
+  right: 5px; /* Adjust as needed to fit your design */
+
+  /* The rest of your button styles */
   color: #f5ba13;
   border: none;
+  border-radius: 18px;
   width: 36px;
   height: 36px;
   cursor: pointer;
