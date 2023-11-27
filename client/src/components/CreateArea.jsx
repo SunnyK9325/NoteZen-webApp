@@ -28,7 +28,7 @@ function CreateArea({ setNotes, notes }) {
   }
 
   function submitNote(event) {
-    axios.post("http://localhost:3001/api/addNote", note)
+    axios.post("https://itssunny.me/api/notezen/api/addNote", note)
       .then(res => {
         setNotes([...notes, res.data]); // Update notes state with the newly added note
         setNote({

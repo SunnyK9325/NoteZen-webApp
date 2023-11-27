@@ -4,7 +4,7 @@ import axios from "axios";
 
 function Note(props) {
   function handleClick(id) {
-    axios.post("http://localhost:3001/api/delete", { id })
+    axios.post("https://itssunny.me/api/notezen/api/delete", { id })
       .then(res => props.setNotes(res.data))
       .catch((err) => {
         console.log(err);
